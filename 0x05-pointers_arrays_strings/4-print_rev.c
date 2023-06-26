@@ -18,5 +18,5 @@ while (i--)
 {
 _putchar(s[i]);
 }
-_putchat('\n');
+_putchar('\n');
 }
