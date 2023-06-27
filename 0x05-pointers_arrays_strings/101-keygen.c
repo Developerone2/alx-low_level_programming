@@ -1,32 +1,25 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+
 /**
- * main - generate random passwords
- * Return: 0(success)
- */
+* main - generates random paasswords for 101-crackme
+* Return: zero
+*/
+
 int main(void)
 {
-int pass[100];
-int i, sum, n;
 
-sum = 0;
+int num;
+char c;
+
 srand(time(NULL));
-
-for (i = 0; i < 100; i++)
+while (sum <= 2645)
 {
-pass[i] = rand() % 78;
-sum += (pass[i] + '0');
-putchar(pass[i] + '0');
-if ((2772 - sum) - '0' < 78)
-{
-n = 2772 - sum - '0';
-sum += n;
-putchar(n + '0');
-
-break;
+c = rand() % 128;
+sum += c;
+putchar(c);
 }
-}
-putchar('\n');
+putchar(2772 - sum);
 return (0);
 }
