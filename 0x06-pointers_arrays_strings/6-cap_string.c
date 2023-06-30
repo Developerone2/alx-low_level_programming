@@ -13,17 +13,17 @@ while (str[inx])
 while (!(str[inx] >= 'a' && str[inx] <= 'z'))
 inx++;
 if (str[inx - 1] == ' '
-str[inx - 1] == '\t'
-str[inx - 1] == '\n'
-str[inx - 1] == ','
-str[inx - 1] == '.'
-str[inx - 1] == ';'
-str[inx - 1] == '!'
-str[inx - 1] == '?'
-str[inx - 1] == '"'
-str[inx - 1] == '('
-str[inx - 1] == ')'
-str[inx - 1] == '{'
+str[inx - 1] == '\t' ||
+str[inx - 1] == '\n' ||
+str[inx - 1] == ',' ||
+str[inx - 1] == '.' ||
+str[inx - 1] == ';' ||
+str[inx - 1] == '!' ||
+str[inx - 1] == '?' ||
+str[inx - 1] == '"' ||
+str[inx - 1] == '(' ||
+str[inx - 1] == ')' ||
+str[inx - 1] == '{' ||
 str[inx - 1] == '}' ||
 inx == 0)
 str[inx] -= 32;
