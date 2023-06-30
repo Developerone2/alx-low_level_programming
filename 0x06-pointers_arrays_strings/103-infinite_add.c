@@ -12,7 +12,7 @@ void rev_string(char *n)
 int i = 0;
 int j = 0;
 char temp;
-while (*(n + i) != '\0'
+while (*(n + i) != '\0')
 {
 i++;
 }
@@ -47,9 +47,9 @@ j++;
 
 i--;
 j--;
-if (j >= size_r || i >= size_r
+if (j >= size_r || i >= size_r)
 return (0);
-while (j >= 0 || i >= o || overflow == 1)
+while (j >= 0 || i >= 0 || overflow == 1)
 {
 
 if (i < 0)
@@ -59,7 +59,7 @@ val1 = *(n1 + i) -'0';
 if (j < 0)
 val2 = 0;
 else
-val2 = *(n2 + j) -'0'
+val2 = *(n2 + j) -'0';
 temp_tot = val1 + val2 + overflow;
 if (temp_tot >= 10)
 overflow = 1;
